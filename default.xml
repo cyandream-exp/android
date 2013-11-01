@@ -3,11 +3,14 @@
 
   <remote  name="aosp"
            fetch=".." />
+  <remote  name="gh"
+           fetch="git://github.com"
+           review="yauniks.dynvpn.de:8082" />
   <default revision="refs/tags/android-4.4_r1"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="platform/build" groups="pdk" >
+  <project path="build" name="kidream/android_build" remote="gh" revision="kd-4.4" groups="pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -41,7 +44,7 @@
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
   <project path="device/lge/hammerhead" name="device/lge/hammerhead" groups="device,hammerhead" />
   <project path="device/lge/hammerhead-kernel" name="device/lge/hammerhead-kernel" groups="device,hammerhead" />
-  <project path="device/lge/mako" name="device/lge/mako" groups="device,mako" />
+  <project path="device/lge/mako" name="kidream/android_device_lge_mako" groups="device,mako" remote="gh" revision="kd-4.4" />
   <project path="device/lge/mako-kernel" name="device/lge/mako-kernel" groups="device,mako" />
   <project path="device/sample" name="device/sample" groups="pdk" />
   <project path="device/samsung/manta" name="device/samsung/manta" groups="device,manta" />
@@ -233,6 +236,7 @@
   <project path="external/webp" name="platform/external/webp" />
   <project path="external/webrtc" name="platform/external/webrtc" groups="pdk" />
   <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" groups="pdk" />
+  <project path="external/xdelta3" name="kidream/android_external_xdelta3" remote="gh" revision="kd-4.4" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" />
   <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" />
   <project path="external/yaffs2" name="platform/external/yaffs2" groups="pdk" />
@@ -427,5 +431,9 @@
   <project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
+  <project path="vendor/broadcom" name="kidream/android_vendor_broadcom" groups="vendor" remote="gh" revision="kd-4.4" />
+  <project path="vendor/kidream" name="kidream/android_vendor_kidream" remote="gh" groups"kidream" revision="kd-4.4" />
+  <project path="vendor/lge" name="kidream/android_vendor_lge" remote="gh" groups="vendor" revision="kd-4.4" />
+  <project path="vendor/qcom" name="kidream/android_vendor_qcom" remote="gh" groups="vendor" revision="kd-4.4" />
 
 </manifest>
