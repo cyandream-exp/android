@@ -432,7 +432,7 @@
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="vendor/broadcom" name="kidream/android_vendor_broadcom" groups="vendor" remote="gh" revision="kd-4.4" />
-  <project path="vendor/kidream" name="kidream/android_vendor_kidream" remote="gh" groups"kidream" revision="kd-4.4" />
+  <project path="vendor/kidream" name="kidream/android_vendor_kidream" remote="gh" groups="kidream" revision="kd-4.4" />
   <project path="vendor/lge" name="kidream/android_vendor_lge" remote="gh" groups="vendor" revision="kd-4.4" />
   <project path="vendor/qcom" name="kidream/android_vendor_qcom" remote="gh" groups="vendor" revision="kd-4.4" />
 
