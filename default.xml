@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".." />
+           fetch="https://android.googlesource.com" />
   <remote  name="gh"
            fetch="git://github.com"
            review="yauniks.dynvpn.de:8082" />
